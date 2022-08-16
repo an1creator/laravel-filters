@@ -1,0 +1,35 @@
+{
+    "name": "n1creator/laravel-filters",
+    "description": "Package provide build filters",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "N1Creator",
+            "email": "dev@n1cretor.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "laravel/framework": "^6",
+        "orchestra/testbench": "4.x"
+    },
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "N1Creator\\LaravelFilters\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/",
+            "App\\": "tests/laravel/app"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "N1Creator\\LaravelFilters\\ServiceProvider"
+            ]
+        }
+    }
+}
